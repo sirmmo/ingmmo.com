@@ -1,0 +1,86 @@
+<mmo-title [left]="['SirMMo','IngMMo']" [divider]="['.']" [right]="['IT','com']"></mmo-title>
+<nav id="standard_nav">
+	<ul>
+		<li><a title="About me" href="#about"><i class="fa fa-info-circle fa-fw fa-2x"></i></a></li>
+		<li><a title="Social" href="#social"><i class="fa fa-comments fa-fw fa-2x"></i></a></li>
+		<li><a title="Where I am" href="#where"><i class="fa fa-compass fa-fw fa-2x"></i></a></li>
+		<li><a title="What I talk about" href="#talk"><i class="fa fa-microphone fa-fw fa-2x"></i></a></li>
+		<li><a title="What I do" href="#work"><i class="fa fa-code fa-fw fa-2x"></i></a></li>
+		<li><a title="What I teach" href="#teach"><i class="fa fa-bell fa-fw fa-2x"></i></a></li>
+		<li><a title="What I read" href="#read"><i class="fa fa-book fa-fw fa-2x"></i></a></li>
+		<li><a title="What I play" href="#play"><i class="fa fa-gamepad fa-fw fa-2x"></i></a></li>
+	</ul>
+</nav>
+
+	<article class="vcard">
+		<h2><span class="left">About me</span><span class="right"><i class="fa fa-info-circle"></i><a id="about"></a></span></h2>
+		<div class="content">
+			I am <span class="fn">Marco Montanari</span>, a <span class="category">coder</span>, <span class="category">developer</span>, <span class="category">software architect</span>, <span class="category">project manager</span>, <span class="category">visionary</span>. Simply put, I'm a strange <span class="category">engineer</span> who loves Artificial Intelligence, Philosophy, Sociology, Theology. And I love urbanistics and architecture (because both are expressions of the previous list). Why three names? MMo.IT was my first domain, bought in 2004. Then came twitter, and my persona became @ingmmo. In the meanwhile in most social networks I took the name <span class="fn">sirmmo</span>.</div>
+		<div id="pic" class="left "><img class="photo" src="/assets/self.png"></div>
+  </article>
+
+	<article>
+		<h2><span class="right">Social</span><span class="left"><i class="fa fa-comments"></i><a id="social"></a></span></h2>
+		<div class="content" id="sms">
+      <mmo-sms *ngFor="let sms of sms_list" [sms]="sms"></mmo-sms>
+    </div>
+  </article>
+
+	<article>
+		<h2><span class="right"><i class="fa fa-compass"></i><a id="where"></a></span><span class="left">Where I am</span></h2>
+		<div id="map">
+		</div>
+		<div class="content">I live in <span class="conf geo" data-coordinates="[11.367572,44.573711]">Castel Maggiore, Italy</span>, and work near <span class="conf geo" data-coordinates="[11.269296,44.429875]">Bologna</span>. I've been living in Germany for 5 years <span class="geo conf" data-coordinates="[9.374095,48.829348]">in Kleinheppach, near Stuttgart</span>.</div>
+		<div class="content">
+			Beside that I love to travel, possibly with conferences:
+		</div>
+		<div id="conf" class="content"></div>
+	</article>
+	<article>
+		<h2><span class="right">What I talk about</span><span class="left"><i class="fa fa-microphone"></i><a id="talk"></a></span></h2>
+		<div class="content">I have a few topics I love to talk about. These are Music, Art, Cinema, Sociology, Smart City, Open Data, Cultural Heritage, Transparency, Software architecture, Python, JavaScript, TypeScript.</div>
+		<div class="content">From my <a href="http://sirmmo.blogspot.com/" target="_blank">Citizen MMo</a> blog (mostly in Italian):</div>
+		<div class="slycontainer" id="post_sly">
+			<ul id="post">
+          <mmo-post *ngFor="let post of post_list" [post]="post"></mmo-post>
+			</ul>
+		</div>
+	</article>
+	<article>
+		<h2><span class="right"><i class="fa fa-code"></i><a id="work"></a></span><span class="left">What I do</span></h2>
+		<div class="content">I'm a developer, so when I work, i develop, while when I don't work, I develop again. My repos: <a href="https://github.com/sirmmo"><i class="fa fa-github"></i>github</a>, <a href="https://bitbucket.org/sirmmo"><i class="fa fa-bitbucket"></i>bitbucket</a>. Here is my knowledge graph with the projects I work[ed] on:</div>
+		<div id="proj" class="content"></div>
+		<div id="pjlist">
+        <mmo-prj *ngFor="let prj of prj_list" [prj]="prj"></mmo-prj>
+    </div>
+	</article>
+	<article>
+		<h2><span class="right">What I teach</span><span class="left"><i class="fa fa-bell"></i><a id="teach"></a></span></h2>
+		<div class="content" id="les">
+        <mmo-les *ngFor="let les of lessons_list" [les]="les"></mmo-les>
+    </div>
+
+	</article>
+	<article>
+		<h2><span class="left">What I read</span><span class="right"><i class="fa fa-book"></i><a id="read"></a></span></h2>
+		<div class="slycontainer" id="book_sly">
+			<ul id="book">
+          <mmo-book *ngFor="let book of book_list" [book]="book"></mmo-book>
+
+			</ul>
+		</div>
+	</article>
+	<article>
+		<h2><span class="left"><i class="fa fa-gamepad"></i><a id="play"></a></span><span class="right">What I play</span></h2>
+		<div class="slycontainer" id="game_sly">
+			<ul id="game">
+          <mmo-game *ngFor="let prj of game_list" [game]="game"></mmo-game>
+			</ul>
+		</div>
+	</article>
+
+  <a id="totop" class="btn btn-inverse btn-large"><i class="fa fa-arrow-up"></i></a>
+
+	<footer>
+		&copy;2018 ingmmo.com
+	</footer>

@@ -1,0 +1,9 @@
+<div itemscope itemtype="http://schema.org/SoftwareApplication" class="prj" itemprop="name">
+  <h4>
+    <i class="fa fa-gear fa-fw"></i>{{prj.name}}
+    <a *ngIf="prj.repo_url" href="{{prj.repo_url}}"><i class="fa fa-code"></i></a>
+    <a *ngIf="prj.address" itemprop="url" href="{{prj.address}}"><i class="fa fa-external-link"></i></a>
+    <i *ngIf="prj.businessplan" class=" fa-file-text-alt" title="Business Plan"></i>
+    <i *ngIf="prj.team" class="fa fa-group gray" title="Team Project"></i>
+  </h4>
+</div>

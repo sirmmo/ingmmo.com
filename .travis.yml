@@ -1,0 +1,21 @@
+language: node_js # Building with node js
+node_js:
+    - "9" # Download the stable node version
+
+# Blocklist
+branches:
+    except:
+      - gh-pages # will be deployed to, no need to build it
+
+script:
+    - cd ingmmo
+    - npm install -g @angular/cli
+    - ng build --prod
+
+deploy:
+    provider: pages
+    skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
+    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    on:
+        branch: master # Build only from master
+    local_dir: ingmmo/dist # Only copy the dist conents

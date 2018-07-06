@@ -1,0 +1,9 @@
+<div class="les">
+    <h5 class="les_title"><i class="fa fa-book fa-fw" title="Title"></i>{{les.name}} <span class="badge badge-success">{{les.hours}}h</span></h5>
+
+    <h6 class="les_orgs"><i class="fa fa-building fa-fw" title="Organizer"></i>{{les.organizer}} ({{les.target}})</h6>
+    <div class="les_time"><i class="fa fa-calendar fa-fw"></i>{{les.date_from}} - {{les.date_to}}</div>
+    <div class="les_desc">{{les.description}}
+      <a *ngIf="les.url" href="{{les.url}}" target="_blank"><i class="fa fa-film fa-fw"></i></a>
+    </div>
+  </div>

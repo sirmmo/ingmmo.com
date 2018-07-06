@@ -1,0 +1,37 @@
+[{
+  "url":"#",
+  "color":"#dedede",
+  "icon":"facebook-f"
+},{
+  "url":"#",
+  "color":"#dedede",
+  "icon":"linkedin"
+},{
+  "url":"#",
+  "color":"#dedede",
+  "icon":"medium"
+},{
+  "url":"#",
+  "color":"#dedede",
+  "icon":"twitter"
+},{
+  "url":"#",
+  "color":"#dedede",
+  "icon":"twitter"
+},{
+  "url":"#",
+  "color":"black",
+  "icon":"github"
+},{
+  "url":"#",
+  "color":"black",
+  "icon":"github"
+},{
+  "url":"#",
+  "color":"black",
+  "icon":"bitbucket"
+},{
+  "url":"#",
+  "color":"black",
+  "icon":"npm"
+}]

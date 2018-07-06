@@ -8,7 +8,7 @@
 	<meta name="author" content="Marco Montanari"/>
 	
 	<meta property="og:title" content="Marco Montanari - Full Stack Developer, Open Data Evangelist, Data Wrangler"/>
-	<meta property="og:url" content="https://web.archive.org/web/20180330205333/http://ingmmo.com/"/>
+	<meta property="og:url" content="http://ingmmo.com/"/>
 	<meta property="og:description" content="Personal website of Marco Montanari, Full Stack Developer, Open Data Evangelist, Data Wrangler, based in Italy."/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://m.c.lnkd.licdn.com/media/p/1/000/02c/2fd/28135b2.jpg"/>
@@ -613,7 +613,7 @@
 				MMo.game_sly = new Sly('#game_sly',MMo.sly_opts).init();
 			});
 			
-			$.getJSON('/data/sms', function(data){
+			$.getJSON('/assets/sms.json', function(data){
 				$.each(data, function(i,e){
 					ich.sms(e).appendTo($('#sms'));
 				});
@@ -669,7 +669,7 @@
 		<h2><span class="left">About me</span><span class="right"><i class="fa fa-info-circle"></i><a id="about"></a></span></h2>
 		<div class="content">
 			I am <span class="fn">Marco Montanari</span>, a <span class="category">coder</span>, <span class="category">developer</span>, <span class="category">software architect</span>, <span class="category">project manager</span>, <span class="category">visionary</span>. Simply put, I'm a strange <span class="category">engineer</span> who loves Artificial Intelligence, Philosophy, Sociology, Theology. And I love urbanistics and architecture (because both are expressions of the previous list). Why three names? MMo.IT was my first domain, bought in 2004. Then came twitter, and my persona became @ingmmo. In the meanwhile in most social networks I took the name <span class="fn">sirmmo</span>.</div>
-		<div id="pic" class="left "><img class="photo" src="https://web.archive.org/web/20180330205333im_/http://m.c.lnkd.licdn.com/media/p/1/000/02c/2fd/28135b2.jpg"></div>
+		<div id="pic" class="left "><img class="photo" src="http://m.c.lnkd.licdn.com/media/p/1/000/02c/2fd/28135b2.jpg"></div>
 	</article>
 	<article>
 		<h2><span class="right">Social</span><span class="left"><i class="fa fa-comments"></i><a id="social"></a></span></h2>
@@ -698,7 +698,7 @@
 	</article>
 	<article>
 		<h2><span class="right"><i class="fa fa-code"></i><a id="work"></a></span><span class="left">What I do</span></h2>
-		<div class="content">I'm a developer, so when I work, i develop, while when I don't work, I develop again. My repos: <a href="https://web.archive.org/web/20180330205333/https://github.com/sirmmo"><i class="fa fa-github"></i>github</a>, <a href="https://web.archive.org/web/20180330205333/https://bitbucket.org/sirmmo"><i class="fa fa-bitbucket"></i>bitbucket</a>. Here is my knowledge graph with the projects I work[ed] on:</div>
+		<div class="content">I'm a developer, so when I work, i develop, while when I don't work, I develop again. My repos: <a href="https://github.com/sirmmo"><i class="fa fa-github"></i>github</a>, <a href="https://bitbucket.org/sirmmo"><i class="fa fa-bitbucket"></i>bitbucket</a>. Here is my knowledge graph with the projects I work[ed] on:</div>
 		<div id="proj" class="content"></div>
 		<div id="pjlist"></div>
 	</article>

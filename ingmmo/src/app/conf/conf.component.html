@@ -1,0 +1,9 @@
+<div class="conf {{conf.is_past}} vevent" >
+    <h3 class="summary"><a class="url" target="_blank" href="{{conf.url}}">{{conf.name}}</a></h3>
+    <div class="badge badge-success" *ngIf="conf.badge">
+      <i *ngIf="conf.badge.speaker" class="fa fa-bullhorn" title="speaker"></i>
+      <i *ngIf="conf.badge.hacker" class="fa fa-code" title="hacker"></i>
+    </div>
+    <div><i class="fa fa-globe fa-fw"></i><span class="location">{{conf.city}}</span></div>
+    <div><i class="fa fa-calendar fa-fw"></i><span class="dtstart">{{conf.date_from}}</span> - <span class="dtend">{{conf.date_to}}</span></div>
+  </div>
